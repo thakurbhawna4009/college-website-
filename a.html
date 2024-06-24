@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .card-container {
+      perspective: 1000px;
+      margin: 20px;
+    }
+
+    .card {
+      width: 200px;
+      height: 300px;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+    }
+
+    .card.flip {
+      transform: rotateY(180deg);
+    }
+
+    .card-inner {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+    }
+
+    .card-front,
+    .card-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-back {
+      transform: rotateY(180deg);
+      background-color: skyblue;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card" id="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <!-- Content for the front of the card inside the image -->
+          <img src="history_img.jpg" alt="Card Front Image" style="width: 100%; height: 100%;">
+        </div>
+        <div class="card-back">
+          <!-- Content for the back of the card -->
+          <p>This is the back of the card.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p>This is a paragraph.</p>
+
+<button onclick="flipCard()">Flip Card</button>
+  
+  <script>
+    function flipCard() {
+      var card = document.getElementById('card');
+      card.classList.toggle('flip');
+    }
+  </script>
+
+</body>
+</html>

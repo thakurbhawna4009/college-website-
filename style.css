@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* home header style */
+body{
+    font-family:poppins;
+    background-color: rgb(226, 223, 223);
+}
+.header {
+    background-color: #002147;
+    color: white;
+    padding: 1px;
+}
+
+.btn {
+    background-color: #002147;
+    border: 2px solid #ec5542;
+    padding: 8px;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+
+.btn:hover {
+    background-color: #ec5542;
+}
+
+/*  home logo image style */
+.logo_navbar {
+    background-color: #b3d4fc;
+}
+
+/* home nabar dropdowns  */
+.dropbtn {
+    background-color: #b3d4fc;
+    color: black;
+    padding: px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+.main_dropdown{
+    margin-top: -0px;
+    float: right;
+    padding: 20px;
+    padding-right: 100px;
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+   
+    
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown a:hover {
+
+    color: orangered;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #002147;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+   
+   
+    
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid white;
+}
+
+
+.dropdown-content a:hover {
+
+    color: orangered;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: orangered;
+}
+
+/* second navbar dropdowns  */
+.second_dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    
+    
+}
+
+.second_dropdown a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.second_dropdown a:hover {
+    color: orangered;
+}
+/* bottom navbar  */
+.bottom_navbar{
+background-color: #002147;
+display: inline-block;
+padding-left: 50px;
+padding-right: 75px;
+margin-top: -20px;
+}
+/* bottom navbar dropdowns style  */
+.bottom_dropbtn {
+    background-color: #002147;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    
+  }
+  
+  .bottom_dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+  }
+  
+  .bottom_dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #002147;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .bottom_dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid  white;
+  }
+  
+  .bottom_dropdown-content a:hover {
+    color:orangered;
+    
+ }
+  
+  .bottom_dropdown:hover .bottom_dropdown-content {
+    display: block;
+  }
+  
+  .bottom_dropdown:hover .bottom_dropbtn {
+    background-color: #002147;
+  }
+  .bottom_dropbtn span{
+   border-right: 2px solid white;
+  }
+
+
+  /* home page slideshow css  */
+
+  * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+h1{
+    font-family: poppins;
+}
+p{
+    font-family: poppins;
+}
+li{
+    font-family: poppins;
+}
+/* row and columns  */
+*{
+    box-sizing: border-box;
+
+}
+.home_column{
+    width: 33.33%;
+    padding: 20px;
+    float: left;
+    background-color: #b3d4fc;
+   
+}
+.home_row::after{
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+.home_row{
+padding: 70px;
+}
+
+/* videos row and column and style */
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.video_column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.video_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.home_column_content {
+  max-height: 200px; /* Set your desired max height */
+  overflow: hidden;
+  transition: max-height 0.5s ease; /* Adjust the duration and timing function as needed */
+}
+
+.home_column:hover .home_column_content {
+  max-height: 500px; /* Set a larger value than the initial max-height on hover */
+}
+
+/* home page filp cards row and columns  */
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.flipcart-column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.flipcard-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* home page flip cards style */
+.card-container {
+  perspective: 1000px;
+  margin: 20px;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background-color: skyblue;
+}
+
+.flipcart-column button {
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 100px;
+}
+.flipcart-column p {
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* contact page style */
+body{
+  font-family: poppins;
+  /* background-color:#b3d4fc ; */
+}
+
+.contact-form {
+  max-width: 400px;
+  width: 100%;
+  background-color: #002147;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.contact-form input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #007bb5;
+}
+
+/* contact page contact row and columns  */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.contact-form{
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+/* Create two equal columns that floats next to each other */
+.contact-map{
+  float: left;
+  width: 65%;
+  padding: 30px;
+  height: 700px; /* Should be removed. Only for demonstration */
+}
+.contact-map iframe{
+  width: 100%;
+  float: right;
+  
+}
+/* Clear floats after the columns */
+.contact-form-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contact-form-row{
+  padding-left:45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* all  pages footer */
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.footer_column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.footer_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer{
+  background-color:#b3d4fc;
+}
+.footer_bottom{
+background-color: #002147;
+padding: 1px;
+padding-left: 20px;
+}
+.footer_bottom p{
+  
+  color: white;
+  
+}
+.footer h1{
+  font-size:20px;
+}
+.footer p{
+  font-size:14px;
+  font-family: poppins;
+}
+.footer ul{
+  font-size:15px;
+  font-family: poppins;
+  line-height:5dvb;
+}
+
+
+/* history and profile page style */
+/* history page content columns  */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.history_page_column {
+  float: left;
+  width: 30%;
+  padding-left: 200px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.history_page_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content_main{
+  background-color: white;
+   margin-left: 100px; 
+   margin-right: 100px;
+   padding: 30px;
+}
+
+ /* vision & mission content row and columns   */
+ 
+ * {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.vision_column {
+  float: left;
+  width: 50%;
+  padding-left: 200px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.vision_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.vision_main{
+  background-color: white;
+   margin-left: 100px; 
+   margin-right: 100px;
+   padding: 30px;
+}
+
+/* objective page content style  */
+.objective_main{
+  background-color: white;
+   margin-left: 100px; 
+   margin-right: 100px;
+   padding: 30px;
+}
+/* managment page style */
+
+.managment_main{
+  background-color: white;
+   margin-left: 100px; 
+   margin-right: 100px;
+   padding: 30px;
+}
+
+/* managment page column and rows  */
+.managment_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.managment_column {
+  float: left;
+  width: 25%;
+  padding-left: 200px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  padding: 20px;
+}
+
+/* message page row and columns style  */
+.Message_main{
+  background-color: white;
+   margin-left: 100px; 
+   margin-right: 100px;
+   padding: 30px;
+}
+
